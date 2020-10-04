@@ -27,6 +27,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       autoplay: 1,
     },
   };
+  const [trailerUrl,setTrailerUrl] = useState([]);
   const handelClick = (movie) => {
     if (trailerUrl) {
       setTrailerUrl("");
